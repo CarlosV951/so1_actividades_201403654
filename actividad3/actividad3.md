@@ -32,3 +32,39 @@ Elimina `usuario3`, pero conserva su directorio principal.
 | Comando | Salida |
 | ------- | ------ |
 | sudo userdel usuario3 | - |
+
+## Gestión de Grupos
+
+### Creación de Grupos
+Crea dos grupos llamados `grupo1` y `grupo2`.
+| Comando | Salida |
+| ------- | ------ |
+| sudo groupadd grupo1 | - |
+| sudo groupadd grupo2 | - |
+
+### Agregar Usuarios a Grupos
+Agrega `usuario1` a `grupo1` y `usuario2` a `grupo2`.
+| Comando | Salida |
+| ------- | ------ |
+| sudo usermod -a -G grupo1 usuario1 | - |
+| sudo usermod -a -G grupo2 usuario2 | - |
+
+### Verificar Membresía
+Verifica que los usuarios han sido agregados a los grupos utilizando el comando `groups`.
+| Comando | Salida |
+| ------- | ------ |
+| groups usuario1 | usuario1 : usuario1 grupo1 |
+| groups usuario2 | usuario2 : usuario2 grupo2 |
+
+### Eliminar Grupo
+Elimina `grupo2`.
+| Comando | Salida |
+| ------- | ------ |
+| sudo groupdel usuario1 | - |
+
+## Gestión de Permisos
+
+
+### Creación de Archivos y Directorios
+
+
